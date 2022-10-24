@@ -38,11 +38,18 @@ export default {
     },
     incrementBeli(barang){
         barang.beli++;
+        barang.stock--;
+        if(barang.stock < 0){
+            barang.stock++;
+            barang.beli--;
+        }
     },
     decrementBeli(barang){
         barang.beli--;
+        barang.stock++;
         if(barang.beli < 0){
             barang.beli=0;
+            barang.stock--;
         }
     }
   },
