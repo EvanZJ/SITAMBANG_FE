@@ -1,5 +1,5 @@
 <template>
-    <NavBar />
+    <NavBar title="SITAMBANG"/>
     <div>
         <p>
             Selamat Datang
