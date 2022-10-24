@@ -1,0 +1,9 @@
+<template>
+    <nav>
+        <h2>SITAMBANG</h2>
+        <div>
+            <a>Login</a>
+            <a>Register</a>
+        </div>
+    </nav>
+</template>
