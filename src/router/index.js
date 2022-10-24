@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/pembeli',
       name: 'homePembeli',
       component: () => import('../views/HomePembeliView.vue')
+    },
+    {
+      path: '/pemesanan',
+      name: 'pemesanan',
+      component: () => import('../views/Pemesanan.vue')
     }
   ]
 })
