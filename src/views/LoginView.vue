@@ -1,13 +1,5 @@
 <template>
-    <nav>
-        <h2>SITAMBANG</h2>
-        <div>
-            <router-link to='/login'>Login</router-link>
-            <router-link to='/register'>Register</router-link>
-        </div>
-    </nav>
-    <!-- Idk why this not work -->
-    <!-- <PreNavBar /> -->
+    <PreNavBar />
     <div>
         <h2>Login</h2>
         <form @submit.prevent="$this.emit()">
@@ -34,9 +26,15 @@ export default {
             password: '',
         }
     },
+    components:{
+        PreNavBar,
+    },
     methods:{
 
     }
 }
 </script>
 
+<style scoped>
+    background-color: #028aff;
+</style>
