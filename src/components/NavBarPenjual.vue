@@ -18,7 +18,7 @@
     </nav>
     <div class="overlay">
         <div class="menu-list" v-if="menu">
-            <router-link class="routing" to="">Riwayat Transaksi</router-link>
+            <router-link class="routing" to="/history-penjual">Riwayat Transaksi</router-link>
             <router-link class="routing" to="">Kondisi Peralatan Tambak</router-link>
             <router-link class="routing" to="/stockPenjual">Informasi Barang</router-link>
             <router-link class="routing" to="">Verifikasi Pemesanan</router-link>
