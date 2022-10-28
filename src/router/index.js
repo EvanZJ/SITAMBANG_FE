@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('../views/HomePembeliView.vue')
     },
     {
+      path: '/admin',
+      name: 'homeAdmin',
+      component: () => import('../views/HomeAdminView.vue')
+    },
+    {
       path: '/pemesanan',
       name: 'pemesanan',
       component: () => import('../views/Pemesanan.vue')

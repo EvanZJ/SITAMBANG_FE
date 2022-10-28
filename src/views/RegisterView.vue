@@ -3,7 +3,7 @@
     <div class="flex-box">
         <div class="box">
             <h2 class="title">Form Pendaftaran Pembeli</h2>
-            <form class="forms" @submit.prevent="$this.emit()">
+            <form class="forms" @submit.prevent="this.$router.push('/pembeli')">
                 <div class="form-input">
                     <label>Nama</label>
                     <input type="text" v-model="nama">

@@ -3,7 +3,7 @@
     <div class="flex-box">
         <div class="box">
             <h2 class="title">Login</h2>
-            <form class="forms" @submit.prevent="$this.emit()">
+            <form class="forms" @submit.prevent="this.$router.push('/admin')">
                 <div class="form-input">
                     <a>Email</a>
                     <br/>
