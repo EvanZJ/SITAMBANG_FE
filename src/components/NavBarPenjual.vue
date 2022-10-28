@@ -13,39 +13,17 @@
             </svg>
         </div>
         <h2>
-            SITAMBANG
+            {{title}}
         </h2>
     </nav>
-    <div class="menu-list" v-if="menu">
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Riwayat Transaksi</router-link>
-            </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Kondisi Peralatan Tambak</router-link>
-            </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Informasi Barang</router-link>
-            </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Verifikasi Pemesanan</router-link>
-            </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Data Karyawan</router-link>
-            </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Data Pembeli</router-link>
-            </div>
+    <div class="overlay">
+        <div class="menu-list" v-if="menu">
+            <router-link class="routing" to="">Riwayat Transaksi</router-link>
+            <router-link class="routing" to="">Kondisi Peralatan Tambak</router-link>
+            <router-link class="routing" to="/stockPenjual">Informasi Barang</router-link>
+            <router-link class="routing" to="">Verifikasi Pemesanan</router-link>
+            <router-link class="routing" to="">Data Karyawan</router-link>
+            <router-link class="routing" to="">Data Pembeli</router-link>
         </div>
     </div>
 </template>
@@ -56,6 +34,9 @@ export default {
         return{
             menu: false,
         }
+    },
+    props:{
+        title: String,
     },
     methods:{
         toggleMenu(){
@@ -83,9 +64,17 @@ export default {
         align-items: flex-start;
         justify-content: flex-start;
         width: fit-content;
+        height: 100%;
         padding: 10px;
     }
-    router-link{
+    .routing{
         color: white;
+        text-decoration: none;
+        font-size: 18pt;
+        padding-right: 20px;
+    }
+    .overlay{
+        position: absolute;
+        height: 91%;
     }
 </style>

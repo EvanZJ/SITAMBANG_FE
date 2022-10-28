@@ -1,4 +1,5 @@
 <script>
+import NavBar from '../components/NavBar.vue'
 export default {
   data() {
     return {
@@ -23,6 +24,9 @@ export default {
             },
         ],
     }
+  },
+  components:{
+    NavBar
   },
   methods: {
     toCurrency(value) {
@@ -57,12 +61,14 @@ export default {
 </script>
 
 <template>
+<NavBar title="Pemesanan"/>
 <div id="all" class="bg-white">
-    <nav class="navbar navbar-expand-lg bg-primary">
+    
+    <!-- <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <h2 class="text-white">Pemesanan</h2>
         </div>
-    </nav>
+    </nav> -->
     <div id="undernav">
         <div id="window-beli" class="mt-3 mb-3 mx-3 border border-bg-gray rounded">
             <div id="title" class="text-black m-3">
