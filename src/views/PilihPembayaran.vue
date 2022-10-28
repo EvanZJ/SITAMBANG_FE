@@ -107,13 +107,7 @@ export default {
             </div>
             <div class="d-flex justify-content-between mx-5 mb-5">
                 <button type="button" class="btn btn-danger px-4">Back</button>
-                <p v-if="isAdmin == 'true'">
-                    <button type="button" class="btn btn-primary px-4">Verifikasi</button>
-                </p>
-                <p v-else>
-                    <button type="button" class="btn btn-primary px-4">Cetak Nota</button>
-                </p>
-                
+                <button type="button" class="btn btn-primary px-4">Next</button>
             </div>
         </div>
     </div>
