@@ -25,6 +25,20 @@ const router = createRouter({
       component: () => import('../views/HomePembeliView.vue')
     },
     {
+      path: '/pemesanan',
+      name: 'pemesanan',
+      component: () => import('../views/Pemesanan.vue')
+    },
+    {
+      path: '/detail-pemesanan',
+      name: 'detail-pemesanan',
+      component: () => import('../views/DetailPemesanan.vue')
+    },
+    {
+      path: '/detail-pemesanan-admin',
+      name: 'detail-pemesanan-admin',
+      component: () => import('../views/DetailPemesananAdmin.vue')
+    },
       path: '/stockPenjual',
       name: 'penjual',
       component: () => import('../views/Stock.vue')
