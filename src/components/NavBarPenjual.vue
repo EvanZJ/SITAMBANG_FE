@@ -13,14 +13,39 @@
             </svg>
         </div>
         <h2>
-            {{ title }}
+            SITAMBANG
         </h2>
     </nav>
-    <div class="overlay">
-        <div class="menu-list" v-if="menu">
-            <router-link class="routing" to="">Riwayat Transaksi</router-link>
-            <router-link class="routing" to="">Informasi Barang</router-link>
-            <router-link class="routing" to="">Pemesanan</router-link>
+    <div class="menu-list" v-if="menu">
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Riwayat Transaksi</router-link>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Kondisi Peralatan Tambak</router-link>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Informasi Barang</router-link>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Verifikasi Pemesanan</router-link>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Data Karyawan</router-link>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col">
+                <router-link to="">Data Pembeli</router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -31,9 +56,6 @@ export default {
         return{
             menu: false,
         }
-    },
-    props:{
-        title: String,
     },
     methods:{
         toggleMenu(){
@@ -61,17 +83,9 @@ export default {
         align-items: flex-start;
         justify-content: flex-start;
         width: fit-content;
-        height: 100%;
         padding: 10px;
     }
-    .routing{
+    router-link{
         color: white;
-        text-decoration: none;
-        font-size: 18pt;
-        padding-right: 20px;
-    }
-    .overlay{
-        position: absolute;
-        height: 91%;
     }
 </style>
