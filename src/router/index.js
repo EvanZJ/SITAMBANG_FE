@@ -28,7 +28,17 @@ const router = createRouter({
       path: '/stockPenjual',
       name: 'penjual',
       component: () => import('../views/Stock.vue')
-    }
+    },
+    {
+      path: '/editstock',
+      name: 'editstock',
+      component: () => import('../views/EditStock.vue')
+    },
+    {
+      path: '/tambahproduk',
+      name: 'tambahproduk',
+      component: () => import('../views/TambahProdukView.vue')
+    },
   ]
 })
 
