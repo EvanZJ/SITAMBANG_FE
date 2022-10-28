@@ -63,7 +63,8 @@ export default {
     margin: 13%;
    }
    .form-input{
-    margin: 10px;
+    margin: 5px;
+    width: 100%;
    }
 
    .forms{
@@ -72,6 +73,7 @@ export default {
     justify-content: space-around;
     flex-direction: column;
     align-content: center;
+    width: 300px;
    }
 
    input[type="submit"]{
@@ -84,6 +86,11 @@ export default {
     padding-right: 30px;
     padding-left: 30px;
     color: white;
+   }
 
+   input[type="text"], input[type="password"]{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
    }
 </style>
