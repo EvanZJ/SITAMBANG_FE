@@ -16,35 +16,37 @@
             SITAMBANG
         </h2>
     </nav>
-    <div class="menu-list" v-if="menu">
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Riwayat Transaksi</router-link>
+    <div class="overlay">
+        <div class="menu-list" v-if="menu">
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link to="/history-penjual" class="routing" >Riwayat Transaksi</router-link>
+                </div>
             </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Kondisi Peralatan Tambak</router-link>
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link to="" class="routing" >Kondisi Peralatan Tambak</router-link>
+                </div>
             </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Informasi Barang</router-link>
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link to="/stockpenjual" class="routing" >Informasi Barang</router-link>
+                </div>
             </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Verifikasi Pemesanan</router-link>
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link class="routing" to="">Verifikasi Pemesanan</router-link>
+                </div>
             </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Data Karyawan</router-link>
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link class="routing" to="">Data Karyawan</router-link>
+                </div>
             </div>
-        </div>
-        <div class="row gx-5">
-            <div class="col">
-                <router-link to="">Data Pembeli</router-link>
+            <div class="row gx-5">
+                <div class="col">
+                    <router-link class="routing" to="">Data Pembeli</router-link>
+                </div>
             </div>
         </div>
     </div>
@@ -66,26 +68,31 @@ export default {
 </script>
 
 <style scoped>
-    nav{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: #028aff;
-        color: white;
-    }
-    .menu-list{
-        display: flex;
-        background-color: #028aff;
-        color: white;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: fit-content;
-        padding: 10px;
-    }
-    router-link{
-        color: white;
-    }
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #028aff;
+    color: white;
+}
+.menu-list{
+    display: flex;
+    background-color: #028aff;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 10px;
+    font-size: 50px;
+}
+.routing{
+    color: white;
+    text-decoration: none;
+}
+.overlay{
+    position: absolute;
+}
 </style>
