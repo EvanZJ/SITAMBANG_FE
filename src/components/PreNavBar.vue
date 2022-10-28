@@ -17,9 +17,11 @@ nav{
     align-items: center;
     background-color: #028aff;
     color: white;
+    padding: 10px;
 }
 
 .routing{
+    text-decoration: none;
     margin: 10px;
     color: white;
 }
