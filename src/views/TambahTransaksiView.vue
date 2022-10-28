@@ -100,7 +100,7 @@
         </div>
         <router-link to="/stockPenjual">
             <button type="button" class="btn btn-primary btn-submit5">
-                Tambah Produk
+                Tambah Riwayat
             </button>
         </router-link>
     </div>
