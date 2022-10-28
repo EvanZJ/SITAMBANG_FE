@@ -55,6 +55,11 @@ const router = createRouter({
       component: () => import('../views/TambahProdukView.vue')
     },
     {
+      path: '/pilih-pembayaran',
+      name: 'pilihpembayaran',
+      component: () => import('../views/PilihPembayaran.vue')
+    },
+    {
       path: '/history-penjual',
       name: 'history-penjual',
       component: () => import('../views/HistoryPenjualView.vue')
