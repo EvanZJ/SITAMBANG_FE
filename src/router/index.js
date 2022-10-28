@@ -36,6 +36,16 @@ const router = createRouter({
       path: '/pemesanan',
       name: 'pemesanan',
       component: () => import('../views/Pemesanan.vue')
+    },
+    {
+      path: '/detail-pemesanan',
+      name: 'detail-pemesanan',
+      component: () => import('../views/DetailPemesanan.vue')
+    },
+    {
+      path: '/detail-pemesanan-admin',
+      name: 'detail-pemesanan-admin',
+      component: () => import('../views/DetailPemesananAdmin.vue')
     }
   ]
 })
