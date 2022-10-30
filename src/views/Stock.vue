@@ -109,8 +109,6 @@ export default {
         box-shadow: 0 0 10px #888888;
         width: 100%;
         margin-top: 2em;
-        margin-left: 2em;
-        margin-right: 2em;
         border-radius: 15px;
     }
     .title-jual{
