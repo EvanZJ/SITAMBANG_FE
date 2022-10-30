@@ -84,6 +84,11 @@ const router = createRouter({
       name: 'tambah-transaksi',
       component: () => import('../views/TambahTransaksiView.vue')
     },
+    {
+      path: '/info-pembayaran-bank',
+      name: 'info-pembayaran-bank',
+      component: () => import('../views/InfoPembayaranBank.vue')
+    },
   ]
 })
 
