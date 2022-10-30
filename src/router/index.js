@@ -94,6 +94,16 @@ const router = createRouter({
       name: 'info-pembayaran-bank',
       component: () => import('../views/InfoPembayaranBank.vue')
     },
+    {
+      path: '/tambahAlat',
+      name: 'tambahAlat',
+      component: () => import('../views/TambahAlatView.vue')
+    },
+    {
+      path: '/updateAlat',
+      name: 'updateAlat',
+      component: () => import('../views/UpdateAlatView.vue')
+    },
   ]
 })
 
