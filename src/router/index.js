@@ -65,6 +65,11 @@ const router = createRouter({
       component: () => import('../views/PilihPembayaran.vue')
     },
     {
+      path: '/konfirmasi-pemesanan',
+      name: 'konfirmasipemesanan',
+      component: () => import('../views/KonfirmasiPemesanan.vue')
+    },
+    {
       path: '/history-penjual',
       name: 'history-penjual',
       component: () => import('../views/HistoryPenjualView.vue')
@@ -83,6 +88,11 @@ const router = createRouter({
       path: '/tambah-transaksi',
       name: 'tambah-transaksi',
       component: () => import('../views/TambahTransaksiView.vue')
+    },
+    {
+      path: '/info-pembayaran-bank',
+      name: 'info-pembayaran-bank',
+      component: () => import('../views/InfoPembayaranBank.vue')
     },
   ]
 })
