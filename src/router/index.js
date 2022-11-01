@@ -104,6 +104,21 @@ const router = createRouter({
       name: 'updateAlat',
       component: () => import('../views/UpdateAlatView.vue')
     },
+    {
+      path: '/kondisiAlat',
+      name: 'kondisiAlat',
+      component: () => import('../views/KondisiAlatView.vue')
+    },
+    {
+      path: '/verifikasiPemesanan',
+      name: 'verifikasiPemesanan',
+      component: () => import('../views/VerifikasiPemesananView.vue')
+    },
+    {
+      path: '/detailVerifikasi',
+      name: 'detailVerifikasi',
+      component: () => import('../views/DetailVerifikasiView.vue')
+    },
   ]
 })
 

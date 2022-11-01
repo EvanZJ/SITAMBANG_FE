@@ -1,5 +1,5 @@
 <template lang="">
-    <NavBar title="Riwayat Transaksi"/>
+    <NavBar title="Kondisi Peralatan"/>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -16,47 +16,41 @@
     <div class="container">
         <div class="isi-item">
             <h1>
-                Riwayat Transaksi
+                Kondisi Peralatan
             </h1>
             <div class="tambah">
-                <router-link to="/tambah-transaksi">
-                    <a href="/" class="tambah-transaksi">
-                        Tambah Transaksi
-                    </a>
+                <router-link class="tambah-alat" to="/tambahAlat">
+                        Tambah Peralatan
                 </router-link>
             </div>
             <table class="table text-center">
                 <thead>
                     <tr>
-                        <th scope="col">Tanggal Transaksi</th>
-                        <th scope="col">Pembeli</th>
-                        <th scope="col">Metode Pembayaran</th>
+                        <th scope="col">Nama Alat</th>
+                        <th scope="col">Penanggung Jawab Terakhir</th>
+                        <th scope="col">Kondisi</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">10-05-2022 14:32:31</th>
-                        <td>Udin Sukmadi</td>
-                        <td>Transfer</td>
+                        <th scope="row">Aerator I</th>
+                        <td>Udin Maharudin</td>
+                        <td>Normal</td>
                         <td>
-                            <router-link to="/history-update-penjual" class="router-link">
+                            <router-link to="/updateAlat" class="router-link">
                                 <button type="button" class="btn btn-info">Update</button>
                             </router-link>
                             |
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Delete
                             </button>
-                            |
-                            <router-link to="/detail" class="router-link">
-                                <button type="button" class="btn btn-dark">Detail</button>
-                            </router-link>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">10-05-2022 14:32:31</th>
-                        <td>Udin Sukmadi</td>
-                        <td>Transfer</td>
+                        <th scope="row">Aerator II</th>
+                        <td>Bambang Rimas</td>
+                        <td>Normal</td>
                         <td>
                             <router-link to="" class="router-link">
                                 <button type="button" class="btn btn-info">Update</button>
@@ -65,16 +59,12 @@
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Delete
                             </button>
-                            |
-                            <router-link to="" class="router-link">
-                                <button type="button" class="btn btn-dark">Detail</button>
-                            </router-link>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">10-05-2022 14:32:31</th>
-                        <td>Udin Sukmadi</td>
-                        <td>Transfer</td>
+                        <th scope="row">Aerator III</th>
+                        <td>Syaiful Rudi</td>
+                        <td>Normal</td>
                         <td>
                             <router-link to="" class="router-link">
                                 <button type="button" class="btn btn-info">Update</button>
@@ -83,16 +73,12 @@
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Delete
                             </button>
-                            |
-                            <router-link to="" class="router-link">
-                                <button type="button" class="btn btn-dark">Detail</button>
-                            </router-link>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">10-05-2022 14:32:31</th>
-                        <td>Udin Sukmadi</td>
-                        <td>Transfer</td>
+                        <th scope="row">Aerator IV</th>
+                        <td>Dono Sutono</td>
+                        <td>Normal</td>
                         <td>
                             <router-link to="" class="router-link">
                                 <button type="button" class="btn btn-info">Update</button>
@@ -101,28 +87,6 @@
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Delete
                             </button>
-                            |
-                            <router-link to="" class="router-link">
-                                <button type="button" class="btn btn-dark">Detail</button>
-                            </router-link>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10-05-2022 14:32:31</th>
-                        <td>Udin Sukmadi</td>
-                        <td>Transfer</td>
-                        <td>
-                            <router-link to="" class="router-link">
-                                <button type="button" class="btn btn-info">Update</button>
-                            </router-link>
-                            |
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Delete
-                            </button>
-                            |
-                            <router-link to="" class="router-link">
-                                <button type="button" class="btn btn-dark">Detail</button>
-                            </router-link>
                         </td>
                     </tr>
                 </tbody>
@@ -145,7 +109,7 @@ export default {
         padding-left: 1em;
         padding-right: 1em;
     }
-    .tambah-transaksi{
+    .tambah-alat{
         margin-left: 75%;
         text-decoration: underline;
         color: black;
